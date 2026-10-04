@@ -36,7 +36,6 @@ echo "Installing desktop components"
 sudo pacman -S --needed --noconfirm \
     waybar \
     rofi-wayland \
-    waypaper \
     awww \
     swaync \
     swayosd \
@@ -72,7 +71,8 @@ sudo pacman -S --needed --noconfirm \
     gvfs-afc \
     usbutils \
     android-udev \
-    dosfstools 
+    dosfstools \
+    chafa
 
 echo "Installing terminal and utilities"
 sudo pacman -S --needed --noconfirm \
