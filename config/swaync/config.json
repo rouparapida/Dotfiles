@@ -1,0 +1,60 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "ignore-gtk-theme": true,
+  "cssPriority": "user",
+
+  "layer": "top",
+  "control-center-layer": "top",
+  "layer-shell": true,
+  "layer-shell-cover-screen": true,
+
+  "positionX": "left",
+  "positionY": "bottom",
+  "control-center-positionX": "left",
+  "control-center-positionY": "top",
+  "control-center-width": 380,
+  "control-center-height": 550,
+  "notification-window-width": 380,
+  "fit-to-screen": true,
+
+  "control-center-margin-top": 4,
+  "control-center-margin-bottom": 4,
+  "control-center-margin-left": 4,
+  "control-center-margin-right": 0,
+
+  "transition-time": 200,
+  "timeout": 5,
+  "timeout-low": 3,
+  "timeout-critical": 0,
+
+  "notification-grouping": true,
+  "notification-2fa-action": true,
+  "notification-inline-replies": false,
+  "hide-on-clear": false,
+  "hide-on-action": true,
+  "script-fail-notify": true,
+  "keyboard-shortcuts": true,
+
+  "text-empty": "No Notifications",
+  "relative-timestamps": true,
+  "image-visibility": "when-available",
+  "notification-body-image-height": 80,
+  "notification-body-image-width": 160,
+
+  "widgets": [
+    "title",
+    "dnd",
+    "notifications"
+  ],
+
+  "widget-config": {
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true,
+      "button-text": "Clear All"
+    },
+    "notifications": {
+      "vexpand": true
+    }
+  }
+}

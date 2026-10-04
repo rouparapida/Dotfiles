@@ -1,0 +1,145 @@
+* {
+    font-family: "JetbrainsMono Nerd Font Propo", sans-serif;
+    font-size: 12px;
+    border: none;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    border-radius: 0;
+}
+
+window#waybar > box {
+    background: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 100px;
+    color: rgba(240, 240, 240, 1);
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background: transparent;
+    margin: 2px;
+}
+
+#window {
+    background: transparent;
+    color: rgba(240, 240, 240, 1);
+    border-radius: 0px;
+    padding: 0 4px;
+    margin: 3px 4px;
+    font-weight: bold;
+}
+
+#window.empty {
+    background: transparent;
+    border: 1px solid transparent;
+    color: rgba(240, 240, 240, 0.4);
+}
+
+#workspaces {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 100px;
+    margin: 3px 4px;
+    padding: 0;
+}
+
+#workspaces button {
+    padding: 0px 4px;
+    margin: 0 2px;
+    border-radius: 4px;
+    background: transparent;
+    color: rgba(240, 240, 240, 0.55);
+    border-bottom: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+#workspaces button.active {
+    color: rgba(255, 255, 255, 1);
+    border-top-color: rgba(255, 255, 255, 1);
+}
+
+#custom-power,
+#custom-notify,
+#battery,
+#network,
+#pulseaudio,
+#backlight,
+#cpu,
+#memory,
+#clock,
+#tray {
+    color: rgba(240, 240, 240, 1);
+    background: transparent;
+    border-radius: 4px;
+    padding: 0 6px;
+    margin: 2px 2px;
+    transition: all 0.2s ease;
+}
+
+#clock {
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(240, 240, 240, 1);
+    border-radius: 100px;
+    padding: 0 8px;
+    margin: 2px 3px;
+    font-weight: bolder;
+}
+
+#tray {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 0 10px;
+    border-radius: 100px;
+}
+
+button:hover,
+#clock:hover,
+#battery:hover,
+#network:hover,
+#custom-notify:hover,
+#pulseaudio:hover,
+#backlight:hover,
+#cpu:hover,
+#memory:hover,
+#custom-power:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 1);
+}
+
+#battery.charging {
+    color: rgba(240, 240, 240, 1);
+}
+
+#battery.critical {
+    color: rgba(0, 0, 0, 1);
+    background: rgba(240, 240, 240, 1);
+    font-weight: bold;
+    animation: blink 2s ease-in-out infinite;
+}
+
+#network.disconnected,
+#pulseaudio.muted {
+    color: rgba(240, 240, 240, 0.35);
+}
+
+tooltip {
+    background: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+}
+
+tooltip label {
+    font-family: "JetbrainsMono Nerd Font Propo", sans-serif;
+    font-size: 12px;
+    color: rgba(240, 240, 240, 1);
+    padding: 4px;
+}
+
+@keyframes blink {
+    0%   { color: rgba(240, 240, 240, 1); background: rgba(255, 255, 255, 0.12); }
+    50%  { color: rgba(0, 0, 0, 1); background: rgba(240, 240, 240, 1); }
+    100% { color: rgba(240, 240, 240, 1); background: rgba(255, 255, 255, 0.12); }
+}

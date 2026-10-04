@@ -1,0 +1,148 @@
+{
+    "height": 30,
+    "spacing": 2,
+    "position": "top",
+
+    "margin-top": 4,
+    "margin-bottom": 0,
+    "margin-left": 20,
+    "margin-right": 20,
+
+    "modules-left": [
+        "hyprland/workspaces",
+        "custom/notify",
+        "custom/separator",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        
+    ],
+    "modules-right": [
+        "tray",
+        "network",
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "custom/power",
+        "custom/separator",
+        "clock"
+    ],
+
+    "hyprland/workspaces": {
+        "format": "<span size='larger'>{icon}</span>",
+        "on-click": "activate",
+        "format-icons": {
+          "1": "ᚠ",
+          "2": "ᚢ",
+          "3": "ᚦ",
+          "4": "ᚨ",
+          "5": "ᛟ",
+          "6": "ᚴ",
+          "7": "ᛖ",
+          "8": "ᛗ",
+          "9": "ᛚ",
+          "10": "ᚱ"
+        },
+        "icon-size": 10,
+        "sort-by-number": true,
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 35,
+        "separate-outputs": true,
+        "on-click": "",
+        "rewrite": {
+            "": "Desktop"
+        }
+    },
+
+    "tray": {
+        "spacing": 10,
+        "icon-size": 15
+    },
+
+    "clock": {
+        "format": "{:%H:%M} 󰥔",
+        "format-alt": "{:%d/%m/%Y} ",
+        "tooltip": false
+    },
+
+    "backlight": {
+        "format": "󰃠",
+        "tooltip": true,
+        "tooltip-format": "{percent}% 󰃠",
+        "on-click": "killall hyprsunset || hyprsunset"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}",
+        "format-charging": "",
+        "format-plugged": "",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "tooltip": true,
+        "tooltip-format": "{capacity}% ",
+        "on-click": ""
+    },
+    
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "",
+        "tooltip": true,
+        "tooltip-format-wifi": "Network: {essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "Connected (Ethernet) 󰈀",
+        "tooltip-format-disconnected": "Disconnected ⚠",
+        "on-click": "kitty -e nmtui"
+    },
+    
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "tooltip": true,
+        "tooltip-format": "{volume}% ",
+        "on-click": "pavucontrol"
+    },
+
+    "custom/power": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "hyprlock"
+    },
+
+    "custom/notify": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "swaync-client -t"
+    },
+
+    "custom/separator": {
+        "format": "|",
+        "tooltip": false
+    }
+}

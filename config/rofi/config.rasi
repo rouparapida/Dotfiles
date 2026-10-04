@@ -1,0 +1,105 @@
+* {
+    font: "JetBrainsMono Nerd Font Propo 13";
+}
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: " ";
+    drun-display-format: "{name}";
+}
+
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+    y-offset: 1px;
+    width: 55%;
+    border-radius: 10px; 
+    background-color: rgba(0, 0, 0, 1);
+    border-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid;
+    padding: 14px;
+}
+
+mainbox {
+    spacing: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    children: ["inputbar", "listview", "message"];
+}
+
+inputbar {
+    height: 100px;
+    spacing: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    text-color: rgba(240, 240, 240, 1);
+    border-radius: 0px;
+    children: ["prompt", "entry"];
+    padding: 7px 9px;
+}
+
+prompt {
+    background-color: transparent;
+    text-color: rgba(240, 240, 240, 1);
+    vertical-align: 0.5; 
+}
+
+entry {
+    background-color: transparent;
+    text-color: rgba(240, 240, 240, 1);
+    placeholder: "Search apps...";
+    placeholder-color: rgba(240, 240, 240, 0.4); 
+    vertical-align: 0.5;
+}
+
+listview {
+    columns: 1;
+    lines: 5;
+    fixed-height: true;
+    fixed-columns: true;
+    cycle: false;
+    scrollbar: false;
+    border: 0px solid;
+    background-color: transparent; 
+}
+
+element {
+    spacing: 12px;
+    margin: 2px 0px;
+    padding: 8px 12px;
+    border: 0px solid;
+    border-radius: 100px;
+    background-color: transparent;
+    text-color: rgba(240, 240, 240, 0.6);
+}
+
+element-icon {
+    background-color: transparent;
+    text-color: inherit;
+    size: 24px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color: rgba(240, 240, 240, 0.75);
+}
+
+element selected.normal,
+element selected.active {
+    background-color: rgba(240, 240, 240, 1);
+    text-color: rgba(0, 0, 0, 1);
+}
+
+message {
+    background-color: transparent;
+    border: 0px solid;
+}
