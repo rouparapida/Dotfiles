@@ -95,6 +95,14 @@ window#waybar > box {
     border-radius: 100px;
 }
 
+#custom-media {
+    background: transparent;
+    color: rgba(240, 240, 240, 1);
+    font-weight: bold;
+    padding: 0 12px;
+    margin: 2px 2px;
+}
+
 button:hover,
 #clock:hover,
 #battery:hover,

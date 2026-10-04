@@ -12,7 +12,7 @@
         "hyprland/workspaces",
         "custom/notify",
         "custom/separator",
-        "hyprland/window"
+        "custom/media"
     ],
     "modules-center": [
         
@@ -139,6 +139,16 @@
         "format": "",
         "tooltip": false,
         "on-click": "swaync-client -t"
+    },
+
+    "custom/media": {
+       "exec": "echo 'No media found'; playerctl --follow metadata --format '{{ status }}|{{ markup_escape(title) }}' 2>/dev/null | while IFS='|' read -r status title; do if [ -z \"$title\" ]; then echo 'No media found'; continue; fi; if [ \"$status\" = \"Playing\" ]; then icon=''; else icon=''; fi; echo \"$icon  $title\"; done",
+       "format": "{}",
+       "tooltip": false,
+       "max-length": 50,
+       "on-click": "playerctl play-pause",
+       "on-click-right": "playerctl next",
+       "on-click-middle": "playerctl previous"
     },
 
     "custom/separator": {

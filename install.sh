@@ -72,7 +72,8 @@ sudo pacman -S --needed --noconfirm \
     usbutils \
     android-udev \
     dosfstools \
-    chafa
+    chafa \
+    playerctl
 
 echo "Installing terminal and utilities"
 sudo pacman -S --needed --noconfirm \
