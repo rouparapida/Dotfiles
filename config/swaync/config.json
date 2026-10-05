@@ -18,8 +18,8 @@
   "fit-to-screen": true,
 
   "control-center-margin-top": 4,
-  "control-center-margin-bottom": 4,
-  "control-center-margin-left": 4,
+  "control-center-margin-bottom": 6,
+  "control-center-margin-left": 6,
   "control-center-margin-right": 0,
 
   "transition-time": 200,
