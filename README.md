@@ -66,6 +66,7 @@ After the installation finishes, a few manual steps are required for everything 
 | SUPER + E | Open file manager |
 | SUPER + Space | Open application launcher |
 | SUPER + L | Lock screen |
+| SUPER + P | Power menu |
 | SUPER + N | Notification center |
 | SUPER + SHIFT + W | Wallpaper selector |
 | SUPER + SHIFT + S | Screenshot (region) |
