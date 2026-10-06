@@ -36,7 +36,7 @@ listview {
 }
 
 element {
-    padding: 26px 0px;
+    padding: 16px 0px;
     border: 0px solid;
     border-radius: 14px;
     background-color: rgba(255, 255, 255, 0.04);

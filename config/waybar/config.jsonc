@@ -131,7 +131,7 @@
     "custom/power": {
         "format": "⏻",
         "tooltip": false,
-        "on-click": "hyprlock"
+        "on-click": "sh ~/.scripts/powermenu.sh"
     },
 
     "custom/notify": {
