@@ -26,6 +26,6 @@ case "$choice" in
     0) systemctl poweroff ;;
     1) systemctl reboot ;;
     2) pidof hyprlock >/dev/null || hyprlock ;;
-    3) hyprctl dispatch exit ;;
+    3) hyprctl dispatch 'hl.dsp.exit()' ;;
     *) exit 0 ;;
 esac
