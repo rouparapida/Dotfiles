@@ -42,6 +42,12 @@ After the installation finishes, a few manual steps are required for everything 
 - **Configure your monitors:** Define the resolution, refresh rate, and position of each monitor.
   Edit the following file: `~/.config/hypr/modules/monitors.lua`
 
+- **Make custom scripts executable:** Give execute permission to the custom scripts (`powermenu.sh` and `cleaner.sh`) located in `~/.scripts`:
+
+```bash
+  chmod +x ~/.scripts/powermenu.sh ~/.scripts/cleaner.sh
+```
+
 - **Install GPU drivers:** For the best performance and to avoid visual glitches, make sure the correct video drivers for your hardware are installed.
 
 - **Install CPU microcode:** To improve stability and apply known CPU fixes, make sure the appropriate microcode package for your processor is installed.

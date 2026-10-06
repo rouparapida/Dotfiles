@@ -1,0 +1,64 @@
+* {
+    font: "JetBrainsMono Nerd Font Propo 13";
+}
+
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+    width: 460px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid;
+    padding: 14px;
+}
+
+mainbox {
+    spacing: 0;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    children: ["listview"];
+}
+
+listview {
+    columns: 4;
+    lines: 1;
+    layout: vertical;
+    fixed-height: true;
+    fixed-columns: true;
+    cycle: true;
+    scrollbar: false;
+    spacing: 10px;
+    border: 0px solid;
+    background-color: transparent;
+}
+
+element {
+    padding: 26px 0px;
+    border: 0px solid;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.04);
+    text-color: rgba(240, 240, 240, 0.6);
+}
+
+element-text {
+    font: "JetBrainsMono Nerd Font Propo 30";
+    background-color: transparent;
+    text-color: inherit;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: rgba(255, 255, 255, 0);
+    text-color: rgba(240, 240, 240, 0.75);
+}
+
+element selected.normal,
+element selected.active {
+    background-color: rgba(240, 240, 240, 1);
+    text-color: rgba(0, 0, 0, 1);
+}

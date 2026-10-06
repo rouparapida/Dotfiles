@@ -45,8 +45,7 @@ sudo pacman -S --needed --noconfirm \
     hyprpicker \
     wl-clipboard \
     cliphist \
-    brightnessctl \
-    playerctl
+    brightnessctl
 
 echo "Installing audio and media codecs"
 sudo pacman -S --needed --noconfirm \
