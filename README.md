@@ -42,6 +42,16 @@ After the installation finishes, a few manual steps are required for everything 
 - **Configure your monitors:** Define the resolution, refresh rate, and position of each monitor.
   Edit the following file: `~/.config/hypr/modules/monitors.lua`
 
+- **Configure swayosd keybinds:** By default, the keybinds are set to [F1, F2, F3, F4, F5], but you can change them to your preference.
+Edit the following file: `~/.config/hypr/modules/keybinds.lua`
+Example:
+```bash
+  hl.bind("F1", hl.dsp.exec_cmd("swayosd-client --output-volume mute-toggle"))
+  hl.bind("F2", hl.dsp.exec_cmd("swayosd-client --output-volume -5"))
+  hl.bind("F3", hl.dsp.exec_cmd("swayosd-client --output-volume +5"))
+```
+
+
 - **Make custom scripts executable:** Give execute permission to the custom scripts (`powermenu.sh` and `cleaner.sh`) located in `~/.scripts`:
 
 ```bash
