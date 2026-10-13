@@ -5,8 +5,8 @@
 
     "margin-top": 0,
     "margin-bottom": 0,
-    "margin-left": 45,
-    "margin-right": 45,
+    "margin-left": 100,
+    "margin-right": 100,
 
     "modules-left": [
         "hyprland/workspaces",
