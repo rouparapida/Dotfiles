@@ -16,7 +16,7 @@ hl.config({
     },
 
     decoration = {
-        rounding = 0,
+        rounding = 10,
         rounding_power = 2,
 
         active_opacity = 1.0,
@@ -24,8 +24,8 @@ hl.config({
 
         shadow = {
             enabled = false,
-            range = 10,
-            render_power = 2,
+            range = 25,
+            render_power = 24,
             color = 0x1a000000,
         },
 

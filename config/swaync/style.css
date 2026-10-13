@@ -15,7 +15,7 @@ scale:focus slider {
 .close-button {
   background: transparent;
   border: none;
-  border-radius: 0px;
+  border-radius: 5px;
   color: rgba(240, 240, 240, 0.2);
   margin-right: 16px;
   margin-top: 12px;
@@ -44,7 +44,7 @@ blankwindow,
 .control-center {
   background: rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 .control-center .control-center-list-placeholder {
@@ -132,7 +132,7 @@ blankwindow,
 .notification-row .notification-background .notification {
   background: rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 0px;
+  border-radius: 5px;
   padding: 0;
   transition: background 0.15s ease-in-out;
 }
@@ -145,7 +145,7 @@ blankwindow,
 .notification-row .notification-background .notification .notification-default-action {
   background: transparent;
   border: none;
-  border-radius: 0px;
+  border-radius: 5px;
   color: rgba(240, 240, 240, 1);
   margin: 0;
   padding: 12px;
@@ -154,17 +154,17 @@ blankwindow,
 
 .notification-row .notification-background .notification .notification-default-action:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 0px;
+  border-radius: 5px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content {
   background: transparent;
-  border-radius: 0px;
+  border-radius: 5px;
   padding: 0;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .image {
-  border-radius: 0px;
+  border-radius: 5px;
   margin: 4px;
 }
 
