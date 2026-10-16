@@ -31,16 +31,8 @@
         "format": "<span size='larger'>{icon}</span>",
         "on-click": "activate",
         "format-icons": {
-          "1": "ᚠ",
-          "2": "ᚢ",
-          "3": "ᚦ",
-          "4": "ᚨ",
-          "5": "ᛟ",
-          "6": "ᚴ",
-          "7": "ᛖ",
-          "8": "ᛗ",
-          "9": "ᛚ",
-          "10": "ᚱ"
+            "active": "●",
+            "default": "○"
         },
         "icon-size": 10,
         "sort-by-number": true,
