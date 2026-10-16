@@ -11,7 +11,7 @@ window#waybar {
 }
 
 window#waybar > box {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     border-top: none;
     border-radius: 0px; 
@@ -127,9 +127,9 @@ button:hover,
 }
 
 tooltip {
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 tooltip label {
