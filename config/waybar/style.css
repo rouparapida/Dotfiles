@@ -75,7 +75,7 @@ window#waybar > box {
 #tray {
     color: rgba(240, 240, 240, 1);
     background: transparent;
-    border-radius: 0px;
+    border-radius: 2px;
     padding: 0 6px;
     margin: 2px 2px;
     transition: all 0.2s ease;
@@ -129,7 +129,7 @@ button:hover,
 tooltip {
     background: rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 0px;
+    border-radius: 4px;
 }
 
 tooltip label {
