@@ -15,7 +15,7 @@ window {
     anchor: center;
     y-offset: 1px;
     width: 55%;
-    border-radius: 6px 6px 0px 0px; 
+    border-radius: 10px 10px 0px 0px; 
     background-color: rgba(0, 0, 0, 0.8);
     border-color: rgba(255, 255, 255, 0.08);
     border: 1px solid;
@@ -35,7 +35,7 @@ inputbar {
     spacing: 0px;
     background-color: rgba(255, 255, 255, 0);
     text-color: rgba(240, 240, 240, 1);
-    border-radius: 5px;
+    border-radius: 6px;
     children: ["prompt", "entry"];
     padding: 7px 9px;
 }
@@ -96,7 +96,7 @@ element alternate.normal {
 element selected.normal,
 element selected.active {
     background-color: rgba(240, 240, 240, 1);
-    text-color: rgba(0, 0, 0, 1);
+    text-color: rgba(0, 0, 0, 0.8);
 }
 
 message {
