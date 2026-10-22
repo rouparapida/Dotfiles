@@ -1,7 +1,7 @@
 -- Window look
 hl.config({
     general = {
-        gaps_in = 2,
+        gaps_in = 3,
         gaps_out = 6,
         border_size = 1,
 
@@ -20,13 +20,13 @@ hl.config({
         rounding_power = 2,
 
         active_opacity = 1.0,
-        inactive_opacity = 0.85,
+        inactive_opacity = 1.0,
 
         shadow = {
             enabled = false,
-            range = 25,
-            render_power = 24,
-            color = 0x1a000000,
+            range = 12,
+            render_power = 10,
+            color = 0xee1a1a1a,
         },
 
         blur = {
